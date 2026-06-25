@@ -1,0 +1,306 @@
+{
+  "complaints": [
+    {
+      "id": "comp-1",
+      "citizenName": "Vikram Sharma",
+      "citizenContact": "+91 98765-43210",
+      "inputType": "text",
+      "rawInput": "Received call from Courier Department claiming a package containing contraband drugs was sent under my name to Taiwan. They connected me to Mumbai Cyber Crime branch on Skype. Officer named 'Inspector Patil' threatened me with immediate jail under Digital Arrest and forced me to transfer 45,00,000 INR to safe escrow account ICICI Escrow A/C 451009827364 via UPI ID cbi-escrow@paytm. The call originated from +91 91223-34455.",
+      "status": "reviewed",
+      "timestamp": "2026-06-19T14:32:00Z",
+      "analysis": {
+        "riskScore": 98,
+        "confidence": 100,
+        "classification": "Digital Arrest Scam",
+        "reasoning": "Classic courier scam modality escalating to mock Skype call impersonating Mumbai police, enforcement of false 'digital arrest', and pressure to transfer massive escrow funds immediately.",
+        "redFlags": [
+          "Skype video call used for official investigation",
+          "Threat of 'Digital Arrest' which has no legal existence",
+          "Escrow verification demand to random Icici bank account"
+        ],
+        "entities": {
+          "phones": [
+            "+91 91223-34455"
+          ],
+          "upis": [
+            "cbi-escrow@paytm"
+          ],
+          "bankAccounts": [
+            "ICICI Escrow A/C 451009827364"
+          ],
+          "urls": [],
+          "agencies": [
+            "Mumbai Cyber Crime branch",
+            "Courier Department"
+          ],
+          "emails": []
+        },
+        "policeComplaintDraft": "To,\nThe Cyber Crime Investigation Cell,\nSubject: Complaint against Digital Arrest Scam Impersonation & Extortion\n\nRespected Sir/Madam,\nI, Vikram Sharma, am filing a formal complaint regarding an extortion racket that took place on June 19, 2026. I received a spoofed call from +91 91223-34455 claiming a drug shipment. I was forced into a fake digital arrest online by individuals impersonating Mumbai Cyber Crime officials, leading to extortion of 45,00,000 INR to ICICI Escrow A/C 451009827364.",
+        "citizenGuidelines": [
+          "No agency (CBI, Police, Customs) operates arrest processes over Skype or Zoom.",
+          "Immediately dial 1930 to report cyber financial fraud to government portal."
+        ]
+      }
+    },
+    {
+      "id": "comp-2",
+      "citizenName": "Ananya S. Ray",
+      "citizenContact": "+91 88990-11223",
+      "inputType": "audio_transcript",
+      "rawInput": "Voice transcript: This is Deputy Commissioner Sanjay Mishra from CBI HQ. Your bank account in HDFC has been found linked to suspicious money laundering under the Naresh Goyal Jet Airways case. You are under immediate 24-hour Digital Arrest. You cannot leave your camera screen, inform family or make phone calls. You must transfer 18,00,000 INR to Mumbai Cyber verify UPI account mumbaicyber-verify@sbi to check credential legitimacy. Fake credentials will lead to immediate lockup.",
+      "status": "reviewed",
+      "timestamp": "2026-06-21T09:15:00Z",
+      "analysis": {
+        "riskScore": 95,
+        "confidence": 98,
+        "classification": "Digital Arrest Scam",
+        "reasoning": "High-intensity intimidation involving CBI HQ impersonation, Jet Airways case larping, mock video isolation rule, and transfer request of 18 Lakhs.",
+        "redFlags": [
+          "Command to stay isolated on webcam",
+          "False implication in high-profile money laundering case",
+          "Demand for immediate fund transfer for 'verification'"
+        ],
+        "entities": {
+          "phones": [],
+          "upis": [
+            "mumbaicyber-verify@sbi"
+          ],
+          "bankAccounts": [
+            "HDFC Bank A/C 990141028372"
+          ],
+          "urls": [],
+          "agencies": [
+            "CBI HQ",
+            "CBI",
+            "Mumbai Cyber branch"
+          ],
+          "emails": []
+        },
+        "policeComplaintDraft": "To,\nDirectorate of Cyber Security,\nSubject: Digital Arrest Racket Pretending as Deputy Commissioner Sanjay Mishra\n\nDear Officers,\nAn extortion scammer claiming to be Deputy Commissioner Sanjay Mishra representing CBI HQ placed me under non-consensual surveillance 'Digital Arrest' and coerced a fund transfer of 18,00,000 INR under false money laundering allegations.",
+        "citizenGuidelines": [
+          "Do not panic. Public prosecutors and police officers never conduct investigations or demand payment over video calls.",
+          "Submit transaction logs, screenshots, and UPI reference IDs immediately."
+        ]
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "V-Vikram",
+      "label": "Vikram Sharma (Victim)",
+      "type": "victim",
+      "riskScore": 10,
+      "community": 1,
+      "details": "Scammed of 45L on June 19, 2026",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "locationName": "Mumbai, Maharashtra"
+    },
+    {
+      "id": "V-Ananya",
+      "label": "Ananya S. Ray (Victim)",
+      "type": "victim",
+      "riskScore": 10,
+      "community": 2,
+      "details": "Scammed of 18L on June 21, 2026",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "locationName": "New Delhi, Delhi"
+    },
+    {
+      "id": "V-Arun",
+      "label": "Arun Mehra (Victim)",
+      "type": "victim",
+      "riskScore": 30,
+      "community": 1,
+      "details": "Targeted with spam + spoofed calls",
+      "lat": 26.9124,
+      "lng": 75.7873,
+      "locationName": "Jaipur, Rajasthan"
+    },
+    {
+      "id": "A-MumbaiCyber",
+      "label": "Mumbai Cyber Cell",
+      "type": "agency",
+      "riskScore": 0,
+      "community": 1,
+      "details": "Government Agency (Impersonated Target)",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "locationName": "Mumbai, Maharashtra"
+    },
+    {
+      "id": "A-CBI",
+      "label": "CBI HQ",
+      "type": "agency",
+      "riskScore": 0,
+      "community": 2,
+      "details": "Federal Reserve Bureau (Impersonated Target)",
+      "lat": 28.6139,
+      "lng": 77.209,
+      "locationName": "New Delhi, Delhi"
+    },
+    {
+      "id": "P-91223",
+      "label": "+91 91223-34455",
+      "type": "phone",
+      "riskScore": 95,
+      "community": 1,
+      "details": "Skype spoofing gateway active from Southeast Asia IP",
+      "lat": 13.6558,
+      "lng": 102.5623,
+      "locationName": "Poipet, Cambodia border"
+    },
+    {
+      "id": "P-88776",
+      "label": "+91 88776-65544",
+      "type": "phone",
+      "riskScore": 80,
+      "community": 1,
+      "details": "Secondary calling lines used to threaten Vikram",
+      "lat": 22.5726,
+      "lng": 88.3639,
+      "locationName": "Kolkata, West Bengal"
+    },
+    {
+      "id": "U-cbi-escrow",
+      "label": "cbi-escrow@paytm",
+      "type": "upi",
+      "riskScore": 98,
+      "community": 1,
+      "details": "Escrow proxy wallet routing to mules",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "locationName": "Bengaluru, Karnataka"
+    },
+    {
+      "id": "U-mumbai-verify",
+      "label": "mumbaicyber-verify@sbi",
+      "type": "upi",
+      "riskScore": 95,
+      "community": 2,
+      "details": "Verifying portal masquerade wallet",
+      "lat": 19.076,
+      "lng": 72.8777,
+      "locationName": "Mumbai, Maharashtra"
+    },
+    {
+      "id": "B-EscrowAc",
+      "label": "ICICI Escrow A/C 451009827364",
+      "type": "bank_account",
+      "riskScore": 99,
+      "community": 1,
+      "details": "Mule Bank Account held under 'Ramesh G.'",
+      "lat": 17.385,
+      "lng": 78.4867,
+      "locationName": "Hyderabad, Telangana"
+    },
+    {
+      "id": "B-MuleHdfc",
+      "label": "HDFC A/C 990141028372",
+      "type": "bank_account",
+      "riskScore": 92,
+      "community": 2,
+      "details": "Co-mule transfer node routing funds offshore",
+      "lat": 13.0827,
+      "lng": 80.2707,
+      "locationName": "Chennai, Tamil Nadu"
+    },
+    {
+      "id": "N-Ramesh",
+      "label": "Ramesh G. (Mule)",
+      "type": "mule",
+      "riskScore": 90,
+      "community": 1,
+      "details": "Registered shell account holder, Bengaluru. Receives and immediately routes cash out.",
+      "lat": 12.9716,
+      "lng": 77.5946,
+      "locationName": "Bengaluru, Karnataka"
+    },
+    {
+      "id": "N-Ghost",
+      "label": "Cambodian Core Node (Mastermind)",
+      "type": "mastermind",
+      "riskScore": 100,
+      "community": 1,
+      "details": "Master IP/Server routing Skype spoofers & cryptocurrency conversions",
+      "lat": 11.5564,
+      "lng": 104.9282,
+      "locationName": "Phnom Penh, Cambodia"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "P-91223",
+      "target": "V-Vikram",
+      "type": "scammed"
+    },
+    {
+      "id": "e2",
+      "source": "P-91223",
+      "target": "A-MumbaiCyber",
+      "type": "associated_with"
+    },
+    {
+      "id": "e3",
+      "source": "V-Vikram",
+      "target": "U-cbi-escrow",
+      "type": "transferred_to"
+    },
+    {
+      "id": "e4",
+      "source": "U-cbi-escrow",
+      "target": "B-EscrowAc",
+      "type": "transferred_to"
+    },
+    {
+      "id": "e5",
+      "source": "B-EscrowAc",
+      "target": "N-Ramesh",
+      "type": "controlled_by"
+    },
+    {
+      "id": "e6",
+      "source": "N-Ramesh",
+      "target": "N-Ghost",
+      "type": "controlled_by"
+    },
+    {
+      "id": "e7",
+      "source": "A-CBI",
+      "target": "V-Ananya",
+      "type": "associated_with"
+    },
+    {
+      "id": "e8",
+      "source": "V-Ananya",
+      "target": "U-mumbai-verify",
+      "type": "transferred_to"
+    },
+    {
+      "id": "e9",
+      "source": "U-mumbai-verify",
+      "target": "B-MuleHdfc",
+      "type": "transferred_to"
+    },
+    {
+      "id": "e10",
+      "source": "B-MuleHdfc",
+      "target": "N-Ghost",
+      "type": "controlled_by"
+    },
+    {
+      "id": "e11",
+      "source": "P-88776",
+      "target": "V-Arun",
+      "type": "scammed"
+    },
+    {
+      "id": "e12",
+      "source": "P-88776",
+      "target": "P-91223",
+      "type": "associated_with"
+    }
+  ]
+}
